@@ -39,6 +39,8 @@ nav a {
 
 nav a.active, nav a:hover {
     color: #35C2F2;
+    border-bottom: 2px solid #35C2F2;
+    padding-bottom: 3px;
 }
 
 /* Hero Section */
@@ -94,6 +96,46 @@ nav a.active, nav a:hover {
     text-align: center;
 }
 
+/* Staff Section */
+.staff {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.member {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.member img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border: 3px solid #35C2F2;
+}
+
+/* Contact Page */
+.contact-info {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-info li {
+    margin: 10px 0;
+}
+
+.contact-info a {
+    color: #35C2F2;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
 /* Footer */
 footer {
     background-color: #1A2B49;
@@ -113,7 +155,7 @@ footer {
 
 /* Responsive Adjustments */
 @media (max-width: 768px) {
-    .features {
+    .features, .staff {
         flex-direction: column;
     }
     
