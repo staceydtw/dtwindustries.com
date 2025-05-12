@@ -3,40 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Staff - Static Site</title>
+    <title>Staff - DTW Industries</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
 </head>
 <body>
     <header>
-        <h1>Meet Our Staff</h1>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="staff.html">Staff</a>
-            <a href="contact.html">Contact</a>
-        </nav>
+        <div class="container">
+            <h1>DTW Industries</h1>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="staff.html" class="active">Staff</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
     </header>
-    <main>
+
+    <main class="container">
+        <h2>Our Team</h2>
         <section class="staff">
             <div class="member">
-                <img src="images/derek.jpg" alt="Staff Member 1">
-                <h3>Derek</h3>
-                <p>CEO</p>
+                <img src="images/staff1.jpg" alt="John Doe">
+                <h3>John Doe</h3>
+                <p>Chief Executive Officer</p>
             </div>
             <div class="member">
-                <img src="images/staff2.jpg" alt="Staff Member 2">
-                <h3>Stacey</h3>
-                <p>CTO</p>
+                <img src="images/staff2.jpg" alt="Jane Smith">
+                <h3>Jane Smith</h3>
+                <p>Chief Technical Officer</p>
             </div>
             <div class="member">
-                <img src="images/staff3.jpg" alt="Staff Member 3">
-                <h3>Whoever</h3>
-                <p>COO</p>
+                <img src="images/staff3.jpg" alt="Mike Brown">
+                <h3>Mike Brown</h3>
+                <p>Chief Operating Officer</p>
             </div>
         </section>
     </main>
+
     <footer>
-        &copy; 2025 My Static Site
+        <div class="container">
+            &copy; 2025 DTW Industries. All rights reserved.
+        </div>
     </footer>
 </body>
 </html>
