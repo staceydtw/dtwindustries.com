@@ -1,55 +1,67 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #ffffff;
-    color: #003366;
+/* Basic Reset */
+body, html {
     margin: 0;
     padding: 0;
+    font-family: 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+    background-color: #FFFFFF;
+    color: #1A2B49;
+    line-height: 1.6;
 }
 
+/* Header styling */
 header {
-    background-color: #003366;
-    color: #ffffff;
+    background-color: #1A2B49; /* Dark Navy Blue */
+    color: #FFFFFF;
     padding: 20px;
     text-align: center;
 }
 
+/* Navigation styling */
 nav {
     margin-top: 15px;
 }
 
 nav a {
-    color: #ffffff;
+    color: #FFFFFF;
     text-decoration: none;
-    margin: 0 10px;
+    margin: 0 15px;
+    font-weight: 500;
 }
 
-nav a:hover {
-    text-decoration: underline;
+nav a:hover, nav a.active {
+    border-bottom: 2px solid #35C2F2; /* Bright Accent Blue */
 }
 
+/* Main content styling */
 main {
-    padding: 30px;
-    max-width: 800px;
+    padding: 40px;
+    max-width: 900px;
     margin: 0 auto;
 }
 
+/* Footer styling */
 footer {
-    background-color: #003366;
-    color: #ffffff;
+    background-color: #1A2B49;
+    color: #FFFFFF;
     text-align: center;
     padding: 15px;
     position: fixed;
     bottom: 0;
     width: 100%;
+    font-size: 0.9em;
 }
 
+/* Staff Section */
 .staff {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
 }
 
 .member {
     text-align: center;
+    margin-bottom: 20px;
 }
 
 .member img {
@@ -57,10 +69,22 @@ footer {
     width: 150px;
     height: 150px;
     object-fit: cover;
+    border: 3px solid #35C2F2;
 }
 
+.member h3 {
+    color: #1A2B49;
+    margin: 10px 0 5px 0;
+}
+
+.member p {
+    color: #555;
+    margin: 0;
+}
+
+/* Link Styling */
 a {
-    color: #003366;
+    color: #35C2F2;
     text-decoration: none;
 }
 
