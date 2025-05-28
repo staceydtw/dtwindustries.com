@@ -153,6 +153,20 @@ footer {
     text-decoration: underline;
 }
 
+/* Logo styling */
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo {
+    max-height: 50px; /* Sets maximum height */
+    max-width: 200px; /* Limits maximum width */
+    width: auto; /* Maintains aspect ratio */
+    height: auto; /* Maintains aspect ratio */
+}
+
 /* Responsive Adjustments */
 @media (max-width: 768px) {
     .features, .staff {
@@ -168,5 +182,28 @@ footer {
     nav a {
         display: inline-block;
         margin: 0 10px;
+    }
+
+    .logo {
+        max-height: 40px; /* Smaller on mobile */
+        max-width: 150px;
+    }
+}
+
+/* For very small screens */
+@media (max-width: 480px) {
+    .logo-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+    }
+    
+    .logo {
+        max-height: 35px;
+        max-width: 120px;
+    }
+    
+    .logo-container h1 {
+        font-size: 1.5rem; /* Make the title smaller on very small screens */
     }
 }
