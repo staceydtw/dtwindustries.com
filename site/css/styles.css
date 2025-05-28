@@ -7,6 +7,10 @@ body, html {
     color: #1A2B49;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .container {
     width: 90%;
     max-width: 1200px;
@@ -85,7 +89,7 @@ nav a:hover {
 }
 
 .hero {
-    background: url('../images/hero-bg.jpg') no-repeat center center / cover;
+    background: url('../images/hero-bg.webp') no-repeat center center / cover;
     padding: 80px 0;
     color: #fff;
     text-align: center;
@@ -119,6 +123,19 @@ nav a:hover {
 
 .btn:hover {
     background-color: #269abf;
+}
+
+.btn-animate {
+    animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
 }
 
 .features {
