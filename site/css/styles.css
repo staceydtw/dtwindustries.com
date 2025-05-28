@@ -188,16 +188,93 @@ nav a:hover {
 footer {
     background-color: #1A2B49;
     color: #fff;
-    padding: 20px 0;
+    padding: 40px 0 20px;
     text-align: center;
 }
 
-.social a {
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.footer-col {
+    flex: 1;
+    min-width: 200px;
+    margin-bottom: 20px;
+    padding: 0 15px;
+}
+
+.footer-logo {
+    max-height: 40px;
+    margin-bottom: 10px;
+}
+
+.footer-col h4 {
+    color: #35C2F2;
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.footer-col ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-col ul li {
+    margin-bottom: 8px;
+}
+
+.footer-col ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-col ul li a:hover {
+    color: #35C2F2;
+}
+
+.social-links {
+    display: flex;
+    gap: 15px;
+}
+
+.social-links a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    color: #fff;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.social-links a:hover {
+    background-color: #35C2F2;
+    transform: translateY(-3px);
+}
+
+copyright {
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+address {
+    font-style: normal;
+}
+
+address a {
     color: #35C2F2;
     text-decoration: none;
 }
 
-.social a:hover {
+address a:hover {
     text-decoration: underline;
 }
 
@@ -219,6 +296,19 @@ footer {
     .logo {
         max-height: 40px;
         max-width: 150px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .social-links {
+        justify-content: center;
+    }
+    
+    .footer-col {
+        margin-bottom: 30px;
     }
 }
 
@@ -277,4 +367,76 @@ footer {
 
 .contact-form button:hover {
     background-color: #269abf;
+}
+
+.feature-icon {
+    font-size: 2rem;
+    color: #35C2F2;
+    margin-bottom: 15px;
+}
+
+.contact-info {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.contact-info li {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.contact-info li i {
+    color: #35C2F2;
+    width: 20px;
+}
+
+.member-social {
+    margin-top: 10px;
+}
+
+.member-social a {
+    color: #1A2B49;
+    margin: 0 5px;
+    font-size: 18px;
+}
+
+.member-social a:hover {
+    color: #35C2F2;
+}
+
+.milestones ul li {
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.milestones ul li i {
+    color: #35C2F2;
+    width: 20px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.btn-primary {
+    background-color: #35C2F2;
+    color: #fff;
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: #fff;
+    border: 2px solid #fff;
+}
+
+.btn-secondary:hover {
+    background-color: rgba(255, 255, 255, 0.1);
 }
