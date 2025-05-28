@@ -30,7 +30,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: './site'  # Ensure WebP images are included
+          path: './site'  # Ensure all images (e.g., hero-bg.jpg, derek.jpg) are included
 
       - name: Deploy to GitHub Pages
         id: deployment
