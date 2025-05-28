@@ -1,3 +1,4 @@
+/* Updated CSS with logo and layout fixes */
 body, html {
     margin: 0;
     padding: 0;
@@ -12,27 +13,68 @@ body, html {
     margin: 0 auto;
 }
 
+/* Logo styling */
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+
+@media (min-width: 769px) {
+    .logo-container {
+        float: left;
+        margin-bottom: 0;
+    }
+}
+
+.logo {
+    max-height: 50px;
+    width: auto;
+}
+
+/* Header styling */
 header {
     background-color: #1A2B49;
     color: #fff;
     padding: 20px 0;
 }
 
+header .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (min-width: 769px) {
+    header .container {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
 header h1 {
-    display: inline-block;
     margin: 0;
 }
 
+/* Navigation styling */
 nav {
-    display: inline-block;
-    float: right;
+    text-align: center;
+}
+
+@media (min-width: 769px) {
+    nav {
+        text-align: right;
+    }
 }
 
 nav a {
     color: #fff;
     text-decoration: none;
-    margin-left: 20px;
+    margin: 0 10px;
     font-weight: 500;
+    display: inline-block;
 }
 
 nav a.active,
@@ -139,12 +181,10 @@ footer {
 
     nav {
         display: block;
-        float: none;
         margin-top: 15px;
     }
 
     nav a {
-        display: inline-block;
         margin: 0 10px;
     }
 
