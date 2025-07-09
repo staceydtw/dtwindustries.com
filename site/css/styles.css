@@ -185,6 +185,10 @@ nav a:hover {
     border: 3px solid #4E888F;
 }
 
+.member img.stacey-photo {
+    object-position: center top;
+}
+
 footer {
     background-color: #000000;
     color: #fff;
